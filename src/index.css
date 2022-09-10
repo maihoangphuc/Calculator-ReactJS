@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .app {
+    @apply h-[100vh] flex justify-center items-center;
+  }
+
+  .container {
+    @apply w-[50vh] h-[75vh] bg-[#000] rounded-[1rem] p-[1rem];
+  }
+
+  .wrapper {
+    @apply grid w-[100%] h-[100%] grid-cols-4 grid-rows-6 gap-[10px];
+  }
+
+  .screen {
+    @apply col-span-full text-[#fff] text-right text-[3rem] overflow-hidden;
+  }
+
+  .btn {
+    @apply grid place-content-center bg-[#343434] rounded-[50%] text-[#fff] cursor-pointer font-[500];
+  }
+
+  .light-gray {
+    @apply bg-[#a5a5a5] text-[#000] active:bg-[#d9d9d9];
+  }
+
+  .orange {
+    @apply bg-[#fea00c];
+  }
+
+  .zero {
+    @apply col-start-1 col-span-2 rounded-[50px] items-center pr-[5rem];
+  }
+
+  .active-operator {
+    @apply text-[#fea00c] bg-[#fff];
+  }
+
+  .active-gray {
+    @apply active:bg-[#737373];
+  }
+
+  .active-orange {
+    @apply active:bg-[#fbc88f];
+  }
+}
